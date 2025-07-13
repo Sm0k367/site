@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Epic Tech AI</title>
+    <meta name="description" content="Epic Tech AI Documentation - Complete guides, tutorials, and API documentation for our AI-powered customer communication platform.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .docs-page {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 2rem;
+        }
+        .docs-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .docs-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .docs-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        .docs-card:hover {
+            transform: translateY(-5px);
+        }
+        .docs-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .api-section {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .endpoint {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+        .endpoint-header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+        }
+        .endpoint-body {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">🚀 Epic Tech AI</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#benefits" class="nav-link">Benefits</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="docs-page">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="docs-header">
+            <h1>Documentation</h1>
+            <p>Everything you need to know about Epic Tech AI's customer communication platform</p>
+        </div>
+
+        <div class="docs-grid">
+            <div class="docs-card">
+                <div class="docs-icon">🚀</div>
+                <h3>Getting Started</h3>
+                <p>Quick start guide to set up your Epic Tech AI account and configure your first chat widget in minutes.</p>
+                <ul>
+                    <li>Account setup and verification</li>
+                    <li>Installing the chat widget</li>
+                    <li>Basic configuration options</li>
+                    <li>Testing your installation</li>
+                </ul>
+            </div>
+            
+            <div class="docs-card">
+                <div class="docs-icon">💬</div>
+                <h3>Chat Widget Setup</h3>
+                <p>Comprehensive guide to customizing and configuring your chat widget for optimal customer engagement.</p>
+                <ul>
+                    <li>Widget appearance customization</li>
+                    <li>Welcome messages and greetings</li>
+                    <li>Targeting and display rules</li>
+                    <li>Mobile optimization</li>
+                </ul>
+            </div>
+            
+            <div class="docs-card">
+                <div class="docs-icon">🤖</div>
+                <h3>AI Automation</h3>
+                <p>Learn how to set up and optimize AI-powered automation to handle customer inquiries efficiently.</p>
+                <ul>
+                    <li>Creating automated responses</li>
+                    <li>Setting up conversation routing</li>
+                    <li>Training your AI assistant</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
+            
+            <div class="docs-card">
+                <div class="docs-icon">🔗</div>
+                <h3>Integrations</h3>
+                <p>Connect Epic Tech AI with your existing tools and workflows for seamless operation.</p>
+                <ul>
+                    <li>CRM integrations (Salesforce, HubSpot)</li>
+                    <li>E-commerce platforms (Shopify, WooCommerce)</li>
+                    <li>Team communication (Slack, Microsoft Teams)</li>
+                    <li>Custom webhook integrations</li>
+                </ul>
+            </div>
+            
+            <div class="docs-card">
+                <div class="docs-icon">📊</div>
+                <h3>Analytics & Reporting</h3>
+                <p>Understand your customer communication performance with detailed analytics and insights.</p>
+                <ul>
+                    <li>Dashboard overview</li>
+                    <li>Conversation metrics</li>
+                    <li>Team performance tracking</li>
+                    <li>Custom report generation</li>
+                </ul>
+            </div>
+            
+            <div class="docs-card">
+                <div class="docs-icon">👥</div>
+                <h3>Team Management</h3>
+                <p>Manage your support team, set permissions, and optimize workflow for maximum efficiency.</p>
+                <ul>
+                    <li>Adding team members</li>
+                    <li>Role-based permissions</li>
+                    <li>Conversation assignment</li>
+                    <li>Performance monitoring</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="api-section">
+            <h2>API Documentation</h2>
+            <p>Epic Tech AI provides a comprehensive REST API for developers to integrate our platform with their applications.</p>
+            
+            <h3>Authentication</h3>
+            <p>All API requests require authentication using your API key. Include your API key in the Authorization header:</p>
+            <div class="code-block">
+Authorization: Bearer YOUR_API_KEY
+Content-Type: application/json
+            </div>
+
+            <h3>Base URL</h3>
+            <div class="code-block">
+https://api.epictechai.com/v1/
+            </div>
+
+            <h3>Common Endpoints</h3>
+            
+            <div class="endpoint">
+                <div class="endpoint-header">GET /conversations</div>
+                <div class="endpoint-body">
+                    <p>Retrieve a list of conversations</p>
+                    <div class="code-block">
+curl -X GET "https://api.epictechai.com/v1/conversations" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+                    </div>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <div class="endpoint-header">POST /conversations</div>
+                <div class="endpoint-body">
+                    <p>Create a new conversation</p>
+                    <div class="code-block">
+curl -X POST "https://api.epictechai.com/v1/conversations" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "user123",
+    "message": "Hello, I need help with my account"
+  }'
+                    </div>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <div class="endpoint-header">POST /messages</div>
+                <div class="endpoint-body">
+                    <p>Send a message to a conversation</p>
+                    <div class="code-block">
+curl -X POST "https://api.epictechai.com/v1/messages" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "conversation_id": "conv123",
+    "message": "Thank you for contacting us!",
+    "sender_type": "agent"
+  }'
+                    </div>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <div class="endpoint-header">GET /analytics</div>
+                <div class="endpoint-body">
+                    <p>Retrieve analytics data</p>
+                    <div class="code-block">
+curl -X GET "https://api.epictechai.com/v1/analytics?start_date=2025-01-01&end_date=2025-01-31" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+                    </div>
+                </div>
+            </div>
+
+            <h3>Webhooks</h3>
+            <p>Epic Tech AI can send real-time notifications to your application via webhooks. Configure webhook URLs in your dashboard to receive events such as:</p>
+            <ul>
+                <li>New conversation started</li>
+                <li>Message received</li>
+                <li>Conversation closed</li>
+                <li>Agent assigned</li>
+            </ul>
+
+            <h3>Rate Limits</h3>
+            <p>API requests are limited to 1000 requests per hour per API key. Rate limit headers are included in all responses:</p>
+            <div class="code-block">
+X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 999
+X-RateLimit-Reset: 1642694400
+            </div>
+
+            <h3>Error Handling</h3>
+            <p>The API uses standard HTTP status codes and returns error details in JSON format:</p>
+            <div class="code-block">
+{
+  "error": {
+    "code": "invalid_request",
+    "message": "The request is missing required parameters"
+  }
+}
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                <a href="support.html" class="footer-link">Support</a>
+                <a href="documentation.html" class="footer-link">Documentation</a>
+                <a href="status.html" class="footer-link">Status</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Epic Tech AI Customer Communication Platform. All rights reserved. | Transforming customer experiences worldwide with AI innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Intercom Configuration -->
+    <script>
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "mvbj6qcv",
+      };
+    </script>
+
+    <!-- Intercom Loader -->
+    <script>
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/mvbj6qcv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+</body>
+</html>

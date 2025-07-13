@@ -1,0 +1,33 @@
+{
+  "name": "Intercom - Customer Communication Platform",
+  "short_name": "Intercom",
+  "description": "Transform your customer experience with Intercom's powerful communication platform. Live chat, automated support, and customer engagement tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f8ce6",
+  "theme_color": "#1f8ce6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "communication"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
