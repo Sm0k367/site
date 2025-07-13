@@ -1,72 +1,28 @@
 {
   "version": 2,
   "name": "epic-tech-ai-landing",
-  "builds": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "**/*.html",
-      "use": "@vercel/static"
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
     },
     {
-      "src": "**/*.css",
-      "use": "@vercel/static"
+      "source": "/terms-of-service",
+      "destination": "/terms-of-service.html"
     },
     {
-      "src": "**/*.js",
-      "use": "@vercel/static"
+      "source": "/support",
+      "destination": "/support.html"
     },
     {
-      "src": "**/*.json",
-      "use": "@vercel/static"
+      "source": "/documentation",
+      "destination": "/documentation.html"
     },
     {
-      "src": "**/*.xml",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.txt",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/privacy-policy",
-      "dest": "/privacy-policy.html"
-    },
-    {
-      "src": "/terms-of-service",
-      "dest": "/terms-of-service.html"
-    },
-    {
-      "src": "/support",
-      "dest": "/support.html"
-    },
-    {
-      "src": "/documentation",
-      "dest": "/documentation.html"
-    },
-    {
-      "src": "/status",
-      "dest": "/status.html"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/status",
+      "destination": "/status.html"
     }
   ],
   "headers": [
@@ -145,17 +101,5 @@
       "destination": "/documentation#api-section",
       "permanent": true
     }
-  ],
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "regions": ["iad1", "sfo1", "lhr1"],
-  "github": {
-    "silent": true
-  }
+  ]
 }
